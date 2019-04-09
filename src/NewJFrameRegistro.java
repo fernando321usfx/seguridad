@@ -26,21 +26,248 @@ public class NewJFrameRegistro extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTree1 = new javax.swing.JTree();
+        jDialog1 = new javax.swing.JDialog();
+        jFrame1 = new javax.swing.JFrame();
+        jLabelRegistro = new javax.swing.JLabel();
+        jLabelNombres = new javax.swing.JLabel();
+        jTextFieldNombres = new javax.swing.JTextField();
+        jLabelCuenta = new javax.swing.JLabel();
+        jLabelContrasena = new javax.swing.JLabel();
+        jLabelApellidos = new javax.swing.JLabel();
+        jLabelUsuarioEmail = new javax.swing.JLabel();
+        jLabelUsuarioFechaNacimiento = new javax.swing.JLabel();
+        jLabelUsuarioTelefono = new javax.swing.JLabel();
+        jLabelUsuarioConfirmarContrasena = new javax.swing.JLabel();
+        jTextFieldApellidos = new javax.swing.JTextField();
+        jTextFieldConfirmarContrasena = new javax.swing.JTextField();
+        jPasswordFieldContrasena = new javax.swing.JPasswordField();
+        jTextFieldCuenta = new javax.swing.JTextField();
+        jTextFieldEmail = new javax.swing.JTextField();
+        jTextFieldTelefono = new javax.swing.JTextField();
+        jTextFieldFechaNacimiento = new javax.swing.JTextField();
+        jButtonEditar = new javax.swing.JButton();
+        jButtonEliminar = new javax.swing.JButton();
+        jButtonIngresarNuevo = new javax.swing.JButton();
+        jButtonAtras = new javax.swing.JButton();
+        jLabelFondoRegistro = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jScrollPane1.setViewportView(jTree1);
+
+        javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
+        jDialog1.getContentPane().setLayout(jDialog1Layout);
+        jDialog1Layout.setHorizontalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 400, Short.MAX_VALUE)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jDialog1Layout.setVerticalGroup(
+            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 300, Short.MAX_VALUE)
         );
 
+        javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
+        jFrame1.getContentPane().setLayout(jFrame1Layout);
+        jFrame1Layout.setHorizontalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jFrame1Layout.setVerticalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelRegistro.setFont(new java.awt.Font("Bauhaus 93", 1, 48)); // NOI18N
+        jLabelRegistro.setForeground(new java.awt.Color(255, 102, 0));
+        jLabelRegistro.setText("REGISTRO");
+        getContentPane().add(jLabelRegistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, -1, -1));
+
+        jLabelNombres.setFont(new java.awt.Font("Bauhaus 93", 0, 14)); // NOI18N
+        jLabelNombres.setForeground(new java.awt.Color(255, 102, 0));
+        jLabelNombres.setText("Nombres:");
+        getContentPane().add(jLabelNombres, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 80, 86, 45));
+
+        jTextFieldNombres.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldNombresActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextFieldNombres, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 90, 205, -1));
+
+        jLabelCuenta.setFont(new java.awt.Font("Bauhaus 93", 0, 14)); // NOI18N
+        jLabelCuenta.setForeground(new java.awt.Color(255, 102, 0));
+        jLabelCuenta.setText("Cuenta de Usuario:");
+        getContentPane().add(jLabelCuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, 130, 45));
+
+        jLabelContrasena.setFont(new java.awt.Font("Bauhaus 93", 0, 14)); // NOI18N
+        jLabelContrasena.setForeground(new java.awt.Color(255, 102, 0));
+        jLabelContrasena.setText("Contraseña:");
+        getContentPane().add(jLabelContrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 190, 86, 45));
+
+        jLabelApellidos.setFont(new java.awt.Font("Bauhaus 93", 0, 14)); // NOI18N
+        jLabelApellidos.setForeground(new java.awt.Color(255, 102, 0));
+        jLabelApellidos.setText("Apellidos:");
+        getContentPane().add(jLabelApellidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 86, 45));
+
+        jLabelUsuarioEmail.setFont(new java.awt.Font("Bauhaus 93", 0, 14)); // NOI18N
+        jLabelUsuarioEmail.setForeground(new java.awt.Color(255, 102, 0));
+        jLabelUsuarioEmail.setText("Correo Electronico:");
+        getContentPane().add(jLabelUsuarioEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 270, 140, 45));
+
+        jLabelUsuarioFechaNacimiento.setFont(new java.awt.Font("Bauhaus 93", 0, 14)); // NOI18N
+        jLabelUsuarioFechaNacimiento.setForeground(new java.awt.Color(255, 102, 0));
+        jLabelUsuarioFechaNacimiento.setText("Fecha de Nacimiento:");
+        getContentPane().add(jLabelUsuarioFechaNacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 300, 160, 45));
+
+        jLabelUsuarioTelefono.setFont(new java.awt.Font("Bauhaus 93", 0, 14)); // NOI18N
+        jLabelUsuarioTelefono.setForeground(new java.awt.Color(255, 102, 0));
+        jLabelUsuarioTelefono.setText("Telefono:");
+        getContentPane().add(jLabelUsuarioTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 330, 86, 45));
+
+        jLabelUsuarioConfirmarContrasena.setFont(new java.awt.Font("Bauhaus 93", 0, 14)); // NOI18N
+        jLabelUsuarioConfirmarContrasena.setForeground(new java.awt.Color(255, 102, 0));
+        jLabelUsuarioConfirmarContrasena.setText("Confirmar Contraseña:");
+        getContentPane().add(jLabelUsuarioConfirmarContrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 150, 45));
+
+        jTextFieldApellidos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldApellidosActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextFieldApellidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 120, 205, -1));
+
+        jTextFieldConfirmarContrasena.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldConfirmarContrasenaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextFieldConfirmarContrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 240, 205, -1));
+        getContentPane().add(jPasswordFieldContrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 200, 205, -1));
+
+        jTextFieldCuenta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldCuentaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextFieldCuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 160, 205, -1));
+
+        jTextFieldEmail.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldEmailActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextFieldEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 280, 205, -1));
+
+        jTextFieldTelefono.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldTelefonoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextFieldTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 340, 205, -1));
+
+        jTextFieldFechaNacimiento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldFechaNacimientoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextFieldFechaNacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 310, 205, -1));
+
+        jButtonEditar.setBackground(new java.awt.Color(51, 204, 255));
+        jButtonEditar.setFont(new java.awt.Font("Bauhaus 93", 0, 18)); // NOI18N
+        jButtonEditar.setForeground(new java.awt.Color(255, 102, 0));
+        jButtonEditar.setText("Editar");
+        jButtonEditar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonEditarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtonEditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 380, -1, -1));
+
+        jButtonEliminar.setBackground(new java.awt.Color(51, 204, 255));
+        jButtonEliminar.setFont(new java.awt.Font("Bauhaus 93", 0, 18)); // NOI18N
+        jButtonEliminar.setForeground(new java.awt.Color(255, 102, 0));
+        jButtonEliminar.setText("Eliminar");
+        jButtonEliminar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonEliminarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtonEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 380, -1, -1));
+
+        jButtonIngresarNuevo.setBackground(new java.awt.Color(51, 204, 255));
+        jButtonIngresarNuevo.setFont(new java.awt.Font("Bauhaus 93", 0, 18)); // NOI18N
+        jButtonIngresarNuevo.setForeground(new java.awt.Color(255, 102, 0));
+        jButtonIngresarNuevo.setText("Nuevo");
+        jButtonIngresarNuevo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonIngresarNuevoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtonIngresarNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 380, -1, -1));
+
+        jButtonAtras.setBackground(new java.awt.Color(51, 204, 255));
+        jButtonAtras.setFont(new java.awt.Font("Bauhaus 93", 0, 18)); // NOI18N
+        jButtonAtras.setForeground(new java.awt.Color(255, 102, 0));
+        jButtonAtras.setText("Atras");
+        jButtonAtras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonAtrasActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtonAtras, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 440, -1, -1));
+
+        jLabelFondoRegistro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo-negro-puntos-luces-azules_1035-6355.jpg"))); // NOI18N
+        getContentPane().add(jLabelFondoRegistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 470, 500));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextFieldNombresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldNombresActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldNombresActionPerformed
+
+    private void jTextFieldApellidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldApellidosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldApellidosActionPerformed
+
+    private void jTextFieldConfirmarContrasenaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldConfirmarContrasenaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldConfirmarContrasenaActionPerformed
+
+    private void jTextFieldCuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldCuentaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldCuentaActionPerformed
+
+    private void jTextFieldEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldEmailActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldEmailActionPerformed
+
+    private void jTextFieldTelefonoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldTelefonoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldTelefonoActionPerformed
+
+    private void jTextFieldFechaNacimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldFechaNacimientoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldFechaNacimientoActionPerformed
+
+    private void jButtonEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEditarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonEditarActionPerformed
+
+    private void jButtonEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEliminarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonEliminarActionPerformed
+
+    private void jButtonIngresarNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIngresarNuevoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonIngresarNuevoActionPerformed
+
+    private void jButtonAtrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAtrasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonAtrasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +305,31 @@ public class NewJFrameRegistro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonAtras;
+    private javax.swing.JButton jButtonEditar;
+    private javax.swing.JButton jButtonEliminar;
+    private javax.swing.JButton jButtonIngresarNuevo;
+    private javax.swing.JDialog jDialog1;
+    private javax.swing.JFrame jFrame1;
+    private javax.swing.JLabel jLabelApellidos;
+    private javax.swing.JLabel jLabelContrasena;
+    private javax.swing.JLabel jLabelCuenta;
+    private javax.swing.JLabel jLabelFondoRegistro;
+    private javax.swing.JLabel jLabelNombres;
+    private javax.swing.JLabel jLabelRegistro;
+    private javax.swing.JLabel jLabelUsuarioConfirmarContrasena;
+    private javax.swing.JLabel jLabelUsuarioEmail;
+    private javax.swing.JLabel jLabelUsuarioFechaNacimiento;
+    private javax.swing.JLabel jLabelUsuarioTelefono;
+    private javax.swing.JPasswordField jPasswordFieldContrasena;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextField jTextFieldApellidos;
+    private javax.swing.JTextField jTextFieldConfirmarContrasena;
+    private javax.swing.JTextField jTextFieldCuenta;
+    private javax.swing.JTextField jTextFieldEmail;
+    private javax.swing.JTextField jTextFieldFechaNacimiento;
+    private javax.swing.JTextField jTextFieldNombres;
+    private javax.swing.JTextField jTextFieldTelefono;
+    private javax.swing.JTree jTree1;
     // End of variables declaration//GEN-END:variables
 }
